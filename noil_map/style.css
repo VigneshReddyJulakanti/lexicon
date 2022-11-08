@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: antiquewhite;
+}
+h1{position: relative;left: 35vw;}
+#map{
+    height: 40vw;
+    position: relative; left: 30%;
+}
+#telangana{
+    position: relative;bottom: 13vw;left:5.5vw ;
+    font-size: 0.9vw;
+    font-weight: 100;
+    
+    
+
+}
+#andhra{
+    position: relative;bottom: 10vw;left:1.8vw ;
+    font-size: 0.9vw;
+    font-weight: 100;
+}
+.state{
+    color: red;
+}

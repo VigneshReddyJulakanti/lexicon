@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIL</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <h1 id="fsu"> FARMER'S SIGN UP</h1>
+    <div>
+        <form method="post" action="http://farmerssignup.epizy.com/farmersdetails.php">
+            <p class="fie">Name :<input class="fiee" name="name" type="text" placeholder="FARMER NAME"></p>
+            <p class="fie">State: <select class="fiee" name="state" id="state">
+                <option  value="not selected" selected="selected">state</option></select></p>
+            <p class="fie">Phno :<input class="fiee" id="phno" name="phno"  placeholder="PHN NO."> </p>
+            <button style="position: absolute; left: 45%; font-size: 2vw;" onclick="redi()" value="submit" > Submit</button>
+        </form>
+    </div>
+    <script>
+        var state=["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karanataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarkhand","West Bengal"];
+ window.onload = function() {
+var stateSel=document.getElementById("state");
+for (var x in state) {
+  stateSel.options[stateSel.options.length] = new Option(state[x], state[x]);
+}
+ 
+
+}
+
+function redi(){
+    var pn=document.getElementById("phno").value;
+            var lin="http://noilfarmerhome.epizy.com/"+"?pn="+pn;
+            window.open(lin);
+}
+    </script>
+</body>
+</html>

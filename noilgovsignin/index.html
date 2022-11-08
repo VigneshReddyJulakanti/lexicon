@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIL</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <h1 id="fsu"> GOVERNMENT SIGNIN</h1>
+    <div>
+        <form style="width:fit-content;">
+
+            <p class="fie">Employee UserID:<input class="fiee" name="user_id" id="user_id" type="text" placeholder="USER ID"></p>
+            <p class="fie">Enter Password:<input class="fiee" name="password" id="password" type="password" placeholder="CHECK PASSWORD"> </p>
+            <button  class="fieee" onclick="signin()">SIGN IN</button><br>
+            <p style="font-size: 1.5vw;">Dont have an account ? <a href="http://noilgovsignup.epizy.com/" >SignUp</a></p>
+                
+        </form>
+    </div>
+    <p id="ans"></p>
+    <p id="ec" ></p>
+
+  
+           <script>
+
+var outp;
+function doAJAX(){
+
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "http://noilgovsignin.epizy.com/data.php");
+  xhr.onload = function(){
+    outp = this.response;
+    console.log(outp);
+    try{outp=JSON.parse(outp);}
+catch(err){
+
+location.reload();
+}
+
+  };
+  xhr.send();
+}
+
+try{doAJAX();}
+catch(err){
+
+location.reload();
+}
+
+function check(){
+    console.log(outp);  
+    var un=document.getElementById("user_id").value;
+    var p=document.getElementById("password").value;
+    console.log(outp);
+    for(i in outp){
+        if(outp[i].user_id==un){
+
+            if(outp[i].password==p){
+                return true;
+
+            }else{
+                var ioo=document.getElementById("ec")
+                ioo.innerHTML="Enter the correct password";
+                ioo.style.color="red";
+                ioo.style.fontSize="2vw";
+                return false;
+
+            }
+        }
+    }
+    console.log(outp);
+
+        var unf=document.getElementById("ans");
+        unf.innerHTML="Username not found";
+        unf.style.color="red";
+        unf.style.fontSize="2vw";
+        return false;
+
+
+}
+
+function signin(){
+
+    if(check()){
+    var pn=document.getElementById("user_id").value
+    var lin="http://govmain.epizy.com/"+"?pn="+pn;
+    window.open(lin);
+
+    }else{
+        document.getElementById("ans").innerHTML="Wrong info";
+    }
+}
+  
+    </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1> AGRICULTURE WEB PORTAL</h1>
+    <br>
+    <div>
+    <a href="http://noilfarmersignin.epizy.com/"><img id="farmerimg" src="Farmer.png" ></a>
+    <a href="http://noilgovsignin.epizy.com/"><img id="governmentimg" src="government.jpg"></a>
+    <a href="http://noilprivsignin.epizy.com/"><img id="privateimg"  src="privatesector.jpg"></a>
+    <button id="farmer" style="background-color: black;" onclick="farmersubfun()" > FARMER</button>
+    <div id="farmersub">
+        </div>
+    <button id="government" style="background-color: black;" onclick="governmentsubfun()">GOVERNMENT</button>
+    <div id="governmentsub"> 
+    </div>
+    
+    <button id="private" style="background-color: black;" onclick="privatesubfun()">PRIVATE SECTOR</button>
+<div id="privatesub"> 
+    </div>
+</div>
+
+<script> 
+
+function farmersubfun(){
+    var x=document.getElementById("farmersub");
+    x.innerHTML="<p><a class='sublink' href='http://noilfarmersignin.epizy.com/' >Individual farmers </a></p><p> <a class='sublink' href='http://noilfarmersignin.epizy.com/' >Farmer groups </a></p><p><a class='sublink' href='http://noilfarmersignin.epizy.com/' > Farmer cooperatives </a></p><br>"
+    
+
+
+}   
+function governmentsubfun(){
+    var x=document.getElementById("governmentsub");
+    x.innerHTML="<p><a class='sublink' href='http://noilgovsignin.epizy.com/' >Department of Agriculture & Cooperation </a></p><p> <a class='sublink' href='http://noilgovsignin.epizy.com/' >Attached Offices & Directorates </a></p><p><a class='sublink' href='http://noilgovsignin.epizy.com/' > Testing Labs </a></p><p><a class='sublink' href='http://noilgovsignin.epizy.com/' >Academic and Research Institutions </a></p><br>"
+}
+function privatesubfun(){
+    var x=document.getElementById("privatesub");
+    x.innerHTML="<p><a class='sublink' href='http://noilprivsignin.epizy.com/' >Manufacturers/ Wholesalers/Dealers of inputs </a></p><p> <a class='sublink' href='http://noilprivsignin.epizy.com/' >Importers and exporters of agriculture produce </a></p><p><a class='sublink' href='http://noilprivsignin.epizy.com/' >Traders,Buyers and Commodity Exchanges </a></p><br>"
+}
+
+</script> 
+
+</body>
+</html>

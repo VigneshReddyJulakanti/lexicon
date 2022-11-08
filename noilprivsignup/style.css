@@ -1,0 +1,30 @@
+body{
+    color:aqua;
+    /* font-weight: 700; */
+    /* background-image:url("backgroundprivate.jpg");background-size:100%;
+     */
+     background-color: black;
+}
+#fsu{
+    text-align: center;
+    color: rgb(184, 27, 6);
+    font-size: 5vw;
+}
+form{
+    width: 20vw;
+    position: absolute;
+    left:35%;
+    top:20%;
+}
+.fie{
+ 
+    font-size: 3vw;
+}
+.fiee{
+    font-size: 2vw;
+}
+.fieee{
+    position:absolute;
+    left:35%;
+    font-size: 2vw;
+}

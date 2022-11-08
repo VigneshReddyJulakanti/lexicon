@@ -1,0 +1,32 @@
+#navid{
+    background-color: rgb(84, 41, 204);
+    color: rgb(237, 244, 245);
+    width: 100%;
+}
+#info{
+    position: relative;left:72%;
+    color: red;
+    font-size: 2vw;
+    font-weight: 600;
+}
+table{
+    position: relative;left:60%;top:20%;
+    border-collapse: collapse;
+}
+table,th,td{
+    border:1px solid black;
+    
+}
+#booom{
+    display: none;
+}
+.menu_button{
+    margin: 0.5vw;
+    width:10vw;
+}
+#menu{
+    position: relative ; top: 2vw;
+}
+.men{
+    display: none;
+}

@@ -1,0 +1,140 @@
+h1{
+    font-style: italic;
+    text-align: center;
+}
+    :root {
+
+        --color-1:#27d67680 ;
+        --color-2:#09aa3e ;
+        --color-3: #f3f5ed;
+        --color-4:  #f14b09;
+        --color-5: #e24d11;
+        --angle: 0deg;
+      }
+      body {
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
+        background: #000;
+        color: #fff;
+      }
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+        
+        text-transform: uppercase;
+        
+        background: linear-gradient(
+          var(--angle),
+          var(--color-1) 19%,
+          transparent 19%,
+          transparent 20%,
+          var(--color-2) 20%,
+          var(--color-2) 39%,
+          transparent 39%,
+          transparent 40%,
+          var(--color-3) 40%,
+          var(--color-3) 59%,
+          transparent 59%,
+          transparent 60%,
+          var(--color-4) 60%,
+          var(--color-4) 79%,
+          transparent 79%,
+          transparent 80%,
+          var(--color-5) 80%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; 
+        animation: 10s rotate linear infinite;
+      }
+      @keyframes rotate {
+        to {
+          --angle: 360deg;
+        }
+      }
+      @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+      }
+#farmerimg{
+    width: 20vw;
+    position: absolute;
+    left:10%;
+    top:20%;
+}
+#governmentimg{
+    width:20vw;
+    position:absolute;
+    left:40%;
+    top:20%;
+    height:20vw ;
+}
+#privateimg{
+    width:20vw;
+    position:absolute;
+    left:70%;
+    top:20%;
+    height:20vw;
+}
+#farmer{
+      font-style: oblique;
+      font-size: 3vw;
+      color: #fff;
+      position: absolute;
+      left:13%;
+      top:65%;
+}
+#government{
+    font-style: oblique;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    left:40%;
+    top:62%;
+}
+#private{
+    font-style: oblique;
+    font-size: 3vw;
+    color: #fff;
+    position: absolute;
+    left:69%;
+    top:62%;
+}
+#farmersub{
+    font-style: oblique;
+    font-size: 1.5vw;
+    color: #fff;
+    position: absolute;
+    left:13%;
+    top:75%;
+}
+.sublink{
+    color:#fff;
+}
+#governmentsub{
+    font-style: oblique;
+    font-size: 1.5vw;
+    color: #fff;
+    position: absolute;
+    left:40%;
+    top:75%;
+}
+.sublink{
+    color:#fff;
+}
+#privatesub{
+    font-style: oblique;
+    font-size: 1.5vw;
+    color: #fff;
+    position: absolute;
+    left:69%;
+    top:75%;
+}
+.sublink{
+    color:#fff;
+}
+
+

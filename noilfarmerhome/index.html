@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Main</title>
+    <!-- <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script> -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet" >
+    
+</head>
+<body>
+    
+        <nav id="navid" class="navbar navbar-expand-lg text-white" >
+            <div class="container-fluid">
+             
+             
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a style="color: aliceblue;" class="navbar-brand" aria-current="page" href="http://noilfarmerhome.epizy.com/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color: aliceblue;" class="navbar-brand" aria-current="page" href="http://noilmap.epizy.com">MAP</a>
+                  </li>
+                
+                 
+
+
+                  <li class="nav-item">
+                    <button type="button" onclick="boom()" class="btn btn-primary">SPEAK OUT</button>
+                  </li>
+                 
+                 
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="color: aliceblue;">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div id="menu">
+            <button type="button" class="menu_button" onclick="info()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> INFO </button><br>
+            <button type="button" class="menu_button" onclick="cost()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> COST </button><br>
+            <button type="button" class="menu_button" onclick="climate()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> CLIMATE </button><br>
+            <button type="button" class="menu_button" onclick="pesticides()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> Pesticides </button><br>
+            <button type="button" class="menu_button" onclick="feedback()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> FEEDBACK </button><br>
+            <button type="button" class="menu_button" onclick="soilhealth()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> Soil Health </button><br>
+            <button type="button" class="menu_button" onclick="farmmachinery()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> Farm Machinery </button><br>
+            <button type="button" class="menu_button" onclick="gaps()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> GAPs</button><br>
+            <button type="button" class="menu_button" onclick="agromet()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> Agro Met Advisory </button><br>
+            <button type="button" class="menu_button" onclick="droughtrelief()"  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> Drought Relief </button><br>
+            <a href="http://noilagri.epizy.com"><button type="button" class="menu_button" onclick=""  class="btn btn-primary" style="background-color: rgb(72, 180, 72);"> Logout </button><br></a>
+          </div>
+          <div class="men" id="anspesticides" class="MagicScroll" data-options="mode: cover-flow; height: 275px;">
+            <img src="imgp1.jpg" />
+            <img src="imgp2.png" />
+            <img src="imgp3.png" />
+            <img src="imgp4.png" />
+            <img src="imgp5.png" />
+            <img src="imagep6.png" />
+            <img src="imagep7.png" />
+            <img src="imagep8.png" />
+
+           
+        </div>
+        <div class="men" id="anssoilhealth">
+            <img src="soilhealth.png">
+            <img src="soilhealthflowchart.jpg">
+            <img src="soilhealthtable.png">
+
+
+        </div>
+
+        <div class="men" id="ansdroughtrelief">
+            <img src="drought.png">
+            <img src="droughtrelief.jpg">
+            
+ 
+
+        </div>
+
+        <div id="ans" style="position: absolute;left: 20%;top:10%;width: 80%;height: 100%;" >
+
+            <marquee behaviour="scroll" direction="up" heigth=4vw scrollamount="2" style="color: red;  border: 1px solid red; text-align: center;">
+                <p style="text-align: center;">NOTE:</p>
+                 1) CM KCR has declared rythuBadi phase 2 <br><br>
+                 2) paddy are again been accepted by telangana government<br><br>
+                 3) Tomato price reached the new heights <br><br>
+                 4) In the past 6 months the rate of vegetable growth has been increased by a large percent <br><br>
+                 5) KCR declared an incentive to the farmers who lost their crops due to floods <br><br>
+            </marquee>
+            <p>
+                <img src="Telangana-New-Map-33-Districts.png" width="30%">
+                <img src="kcr.jpg" width="40%" style="position: relative;left: 10%"> 
+            </p>
+        </div>
+
+
+        <div id="ansclimate" class="men" style="position: absolute;left: 20%;top:10%;width: 80%;height: 100%;" >
+
+            <embed src="tsfcst.pdf" width="100%" height="100%"/>
+
+            </div>
+
+
+            <div id="ansfeedback" class="men" style="position: absolute;left: 20%;top:10%;width: 80%;height: 100%;">
+                <form> 
+                    <p>Name                                                              <input name="myname" type="text" required></p><br>
+                    <p>Mail                                                                  <input name="mymail" type="text" required></p><br>
+                    <p class="fie">Select State <select class="fiee" name="state" id="state" required>
+                    <option value="not selected" selected="selected">state</option></select></p><br>
+                    <p class="fie">Select District <select class="fiee" name="district" id="district" required>
+                     <option value="not selected" selected="selected">district</option></select></p><br>
+                     <p>Address*                                                           <input name="myaddress" type="text"></p><br>
+                     <p class="fie">Nature of Feedback <select class="fiee" name="feedback" id="feedback" required><br>
+                     <option value="not selected" selected="selected">feedback</option></select></p><br>
+                     <p>Subject                                                               <input name="mysubject" type="text" required></p><br>
+                     <p>Enter your comment here                                                             <input  id="pdabba" name="mycomment" type="text" required></p><br>
+                     <button  id="fieee" onclick="send()">SEND</button>
+                 </form>
+                </div>
+
+
+
+        <div id="anscost" class="men">
+            
+
+
+            <table  id="tb">
+                <span id="info">
+                    COST
+                </span>
+                
+                <tr>
+                    <th>
+                        SL.NO
+                    </th>
+                    <th>
+                        Commodity
+                    </th>
+                    <th>
+                        Minimum Support Price
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        paddy
+                    </td>
+                    <td>
+                        1940
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Jowar
+                    </td>
+                    <td>
+                        2738
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Bajra
+                    </td>
+                    <td>
+                        2250
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        Ragi
+                    </td>
+                    <td>
+                        3377
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        Maize
+                    </td>
+                    <td>
+                        1870
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        Tur
+                    </td>
+                    <td>
+                        6300
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        7
+                    </td>
+                    <td>
+                        Moong
+                    </td>
+                    <td>
+                        7275
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        8
+                    </td>
+                    <td>
+                        Urad
+                    </td>
+                    <td>
+                        6300
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        9
+                    </td>
+                    <td>
+                        Groundnut
+                    </td>
+                    <td>
+                        5550
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Sunflower seed
+                    </td>
+                    <td>
+                        6015
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        11
+                    </td>
+                    <td>
+                        soyabean
+                    </td>
+                    <td>
+                        3950
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        12
+                    </td>
+                    <td>
+                        Sesamum
+                    </td>
+                    <td>
+                        7307
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        13
+                    </td>
+                    <td>
+                        Nigerseed
+                    </td>
+                    <td>
+                        6930
+                    </td>
+                </tr>
+            </table>
+            <img src="vegcost.jpg" width="25%" style="position: absolute; top:8%;left:20%" >
+            <img src="fixed.png" width="20%" style="position: absolute; top:62%;left:20%">
+
+        </div>
+ 
+
+
+
+
+
+
+
+
+
+      
+        <div id="ansinfo" class="men">
+            
+        <table  id="tb">
+            <span id="info">
+                INFO
+            </span>
+            
+            <tr>
+                <th>
+                    SL.NO
+                </th>
+                <th>
+                    Components
+                </th>
+                <th>
+                    NHM Physical Achievements
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Area Coverage
+                </td>
+                <td>
+                    1515
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    Green House Structure
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    Shade Net House
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    Community tanks/on farm ponds etc.
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    Water Harvesting System for individuals
+                </td>
+                <td>
+                    82
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6
+                </td>
+                <td>
+                    Integrated Pack House
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                </td>
+                <td>
+                    Cold Storage
+                </td>
+                <td>
+                    5
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8
+                </td>
+                <td>
+                    Ripening Chambers
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+        </table>
+
+        <img src="water_harvest.jpg" alt="water_harvest" width="30%" style="position: absolute;left :25%;top: 10%;">
+        <img src="cold.jpg" alt="cold" width="25%" style="position: absolute;left :25%;bottom: 10%;">
+
+    </div>
+
+        
+
+
+        <script>
+              var state=["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karanataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarkhand","West Bengal"];
+ window.onload = function() {
+var stateSel=document.getElementById("state");
+for (var x in state) {
+  stateSel.options[stateSel.options.length] = new Option(state[x], state[x]);
+}
+ 
+
+}
+
+
+            
+            
+            var menustr=" ";
+
+            function info(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("ansinfo").style.display="block";
+                menustr="ansinfo";
+            }
+
+            function cost(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("anscost").style.display="block";
+                menustr="anscost";
+            }
+            function pesticides(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("anspesticides").style.display="block";
+                menustr="anspesticides";
+            }
+
+            function soilhealth(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("anssoilhealth").style.display="block";
+                menustr="anssoilhealth";
+            }
+
+
+            function droughtrelief(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("ansdroughtrelief").style.display="block";
+                menustr="ansdroughtrelief";
+            }
+
+
+            function climate(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("ansclimate").style.display="block";
+                menustr="ansclimate";
+            }
+
+            function feedback(){
+                document.getElementById("ans").style.display="none";
+                if(menustr!=" "){
+                    document.getElementById(menustr).style.display="none";
+                }
+                document.getElementById("ansfeedback").style.display="block";
+                menustr="ansfeedback";
+            }
+
+
+
+
+
+
+
+
+
+
+                    function speak(sentence) {
+                        
+            const utterance = new SpeechSynthesisUtterance(sentence)
+            window.speechSynthesis.speak(utterance)
+            
+          }
+          
+          function boom(){
+
+            document.getElementById('ans').innerHTML = "";
+        var myTab = document.getElementById('tb');
+
+      
+        for (i = 1; i < myTab.rows.length; i++) {
+
+         
+            var objCells = myTab.rows.item(i).cells;
+
+           
+            for (var j = 0; j < objCells.length; j++) {
+                if(j==0){
+                    continue;
+                }
+                
+                var k=objCells.item(j).innerHTML;
+                
+                speak (k );
+                // alert(k);
+                
+            }
+              
+        }
+
+          }
+
+
+
+
+
+
+ 
+        </script>
+
+        
+
+   
+    
+</body>
+</html>
